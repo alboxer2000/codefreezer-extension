@@ -14,6 +14,11 @@
                 blockType: Scratch.BlockType.REPORTER,
                 text: 'Freeze script'
               },
+              {
+                opcode: 'freezecom',
+                blockType: Scratch.BlockType.COMMAND,
+                text: 'Freeze script'
+              },
           ]
         };
       }
