@@ -1,23 +1,23 @@
 (function(Scratch) {
     'use strict';
     if (!Scratch.extensions.unsandboxed) {
-      throw new Error('Code Freezer must run unsandboxed');
+      throw new Error('PooPoo must run unsandboxed');
     }
     class poopoo {
       getInfo() {
         return {
-          id: 'codefreeze',
-          name: 'Code Freezer',
+          id: 'poopoo',
+          name: 'PooPoo',
           blocks: [
             {
-                opcode: 'freeze',
+                opcode: 'hello',
                 blockType: Scratch.BlockType.REPORTER,
-                text: 'Freeze script'
+                text: 'Hello!'
               },
           ]
         };
       }
     // Block Code Here
     }
-    Scratch.extensions.register(new codefreeze());
+    Scratch.extensions.register(new poopoo());
   })(Scratch);
